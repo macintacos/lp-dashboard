@@ -1,7 +1,6 @@
 import {
   Button,
   Card,
-  Link,
   Stack,
   Table,
   TextInput,
@@ -9,7 +8,6 @@ import {
   Title,
   useComponentState,
 } from "@airplane/views";
-import { useEffect } from "react";
 
 const Dashboard = () => {
   const { selectedRow: selectedComment } =
