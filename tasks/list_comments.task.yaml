@@ -1,0 +1,5 @@
+slug: list_comments
+name: list_comments
+sql:
+  resource: "scratch"
+  entrypoint: list_comments.sql

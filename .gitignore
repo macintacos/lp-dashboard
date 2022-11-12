@@ -1,0 +1,5 @@
+.airplane/
+.airplane-view/
+node_modules/
+
+airplane.dev.yaml

@@ -1,0 +1,12 @@
+slug: approve_comment
+name: approve_comment
+parameters:
+  - name: Comment ID
+    slug: comment_id
+    type: shorttext
+    description: The comment's unique identifier.
+sql:
+  resource: "scratch"
+  entrypoint: approve_comment.sql
+  queryArgs:
+    comment_id: "{{params.comment_id}}"
