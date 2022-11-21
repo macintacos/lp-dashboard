@@ -14,22 +14,22 @@ A simple comment moderation dashboard made using [Airplane](https://airplane.dev
        npm install -y
    ```
 
-1. [Create an Airplane dev config file](https://docs.airplane.dev/dev-lifecycle/dev-config-file) to configure your `scratch` [PostgreSQL resource](https://docs.airplane.dev/resources/postgresql) (replacing `$POSTGRESQL_*` variables accordingly):
+1. [Create an Airplane dev config file](https://docs.airplane.dev/dev-lifecycle/dev-config-file) to configure your `scratch` [MongoDB resource](https://docs.airplane.dev/resources/mongodb) (replacing `$MONGODB_*` variables accordingly):
 
    ```yaml
    # ./airplane.dev.yaml
    configVars: {}
    resources:
-     - database: $POSTGRESQL_DATABASE
-       dsn: "postgres://${POSTGRESQL_USERNAME}:${POSTGRESQL_PASSWORD}@${POSTGRESQL_HOST}/${POSTGRESQL_DATABASE}"
-       host: $POSTGRESQL_HOST
-       kind: postgres
+     - database: $MONGODB_DATABASE
+       dsn: "mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_HOST}/${MONGODB_DATABASE}"
+       host: $MONGODB_HOST
+       kind: mongodb
        name: scratch
-       password: $POSTGRESQL_PASSWORD
+       password: $MONGODB_PASSWORD
        port: "5432"
        slug: scratch
        ssl: require
-       username: $POSTGRESQL_USERNAME
+       username: $MONGODB_USERNAME
    ```
 
 1. Create the `comments` table:
